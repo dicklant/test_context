@@ -13,7 +13,7 @@ export default function Tab() {
   const param : IParams = useParams();
   console.log(param)
 
-if(param.idSession == null)
+/*if(param.idSession == null)
   return (
     <div>
       <YellowTab />
@@ -21,10 +21,10 @@ if(param.idSession == null)
       <p>Copy : {copy}</p>
     </div>
   );
-else
+else */
   return (
     <div>
-      <YellowTab />
+      <YellowTab idSession={param.idSession} homePage={false}/>
         <h2>IdSession : {param.idSession}</h2>
         <p>Copy : {copy}</p>
     </div>
